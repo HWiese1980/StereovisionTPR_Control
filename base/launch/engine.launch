@@ -1,0 +1,7 @@
+<launch>
+	<node pkg="rosaria" type="RosAria" name="rosaria">
+		<param name="port" value="/dev/ttyUSB0" />
+	</node>
+	<node pkg="p3dx" type="dead_mans_button.py" name="dead_mans_button" output="screen" />
+	<node pkg="p3dx" type="sixaxis.py" name="sixaxis_to_rosaria" output="screen" />
+</launch>

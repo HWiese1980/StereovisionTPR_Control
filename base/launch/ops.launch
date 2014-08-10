@@ -1,0 +1,12 @@
+<launch>
+	<node pkg="oculus_driver" type="oculus_node" output="screen" name="rift">
+		<param name="frequency" value="50" />
+	</node>
+	<node pkg="oculus_viewer" type="image_distort_viewer" name="image_distort_viewer" output="screen">
+		<param name="image_transport" value="raw"/>
+		<param name="left_image" value="camera/left/image_rect_color" />
+		<param name="right_image" value="camera/right/image_rect_color" />
+	</node>
+	<node pkg="rqt_ops" type="me_control" name="me_control" args="-b pyside" />
+	<node pkg="joy" type="joy_node" name="joy" />
+</launch>

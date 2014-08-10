@@ -1,0 +1,4 @@
+<launch>
+	<node pkg="rqt_ops" type="me_control" name="me_control" args="-b pyside" />
+	<node pkg="joy" type="joy_node" name="joy" />
+</launch>

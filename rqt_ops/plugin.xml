@@ -1,0 +1,18 @@
+<library path="src">
+	<class name="MeControl" type="rqt_ops.me_control.MeControl" base_class_type="rqt_gui_py::Plugin">
+		<description>
+			Plugin zur Steuerung der Mobileinheit von der OPS
+		</description>
+		<qtgui>
+			<group>
+				<label>TPR</label>
+			</group>
+			<group>
+				<label>OPS</label>
+			</group>
+			<label>ME Control</label>
+			<icon type="theme">system-help</icon>
+			<statustip>Plugin zur Steuerung der ME</statustip>
+		</qtgui>
+	</class>
+</library>

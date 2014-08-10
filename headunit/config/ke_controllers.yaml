@@ -1,0 +1,39 @@
+pitch_controller:
+    controller:
+        package: dynamixel_controllers
+        module: joint_position_controller
+        type: JointPositionController
+    joint_name: pitch_joint
+    joint_speed: 3.0
+    motor:
+        id: 3
+        init: 512
+        min: 0
+        max: 1023
+
+yaw_controller:
+    controller:
+        package: dynamixel_controllers
+        module: joint_position_controller
+        type: JointPositionController
+    joint_name: yaw_joint
+    joint_speed: 3.0
+    motor:
+        id: 2
+        init: 512
+        min: 0
+        max: 1023
+
+roll_controller:
+    controller:
+        package: dynamixel_controllers
+        module: joint_position_controller
+        type: JointPositionController
+    joint_name: roll_joint
+    joint_speed: 3.0
+    motor:
+        id: 1
+        init: 512
+        min: 0
+        max: 1023
+
